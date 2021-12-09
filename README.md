@@ -38,7 +38,7 @@ The difference between **domain** and **metric** is actually very simple. Glassn
 All metrics endpoints follow this pattern: https://api.glassnode.com/v1/metrics/{domain}/{metric}.
 For a complete list of **domains**, **metrics** and **params**, see their official API docs (https://docs.glassnode.com).
 
-Here's another example. This time we'll use the client to get both the STH and LTH NUPL for the market cycle from the 2016 halving to the 2020 halving, with a 1h resolution.
+Here's another example. This time we'll use the client to get both the STH and LTH NUPL for the market cycle from the 2016 halving to the 2020 halving, with a 24h resolution.
 ```python
 from  glassnode  import  GlassnodeClient
 
@@ -47,7 +47,7 @@ api_key = ""
 client = GlassnodeClient(api_key)
 since = 1589148000 # July 9 2016
 until = 1468015200 # May 11 2020
-resolution = "1h"
+resolution = "24h"
 params = {"a": "BTC", "s": since, "u": until, "i": resolution}
 
 sth_nupl = client.get("indicators", "nupl_less_155", params)
