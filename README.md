@@ -15,7 +15,7 @@ This is a very simple and intuitive library for accessing the Glassnode API.
 
 To start using the library, first install the package.
 ```bash
-$ pip install glassnode
+pip install glassnode
 ```
 Then, just instanciate the `GlassnodeClient` providing your API key and start making requests.
 Here's a code sample that demonstrates how to get the full history of BTC addresses count.
