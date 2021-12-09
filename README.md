@@ -9,7 +9,7 @@ I am in no way affiliated, associated, authorized, endorsed by, or in any way of
 ## Quick Start
 First, install the package.
 ```bash
-$ pip install glassnode
+pip install glassnode
 ```
 Here's a code sample that demonstrates how to instanciate the `GlassnodeClient` class.
 
