@@ -40,7 +40,7 @@ For a complete list of **domains**, **metrics** and **params**, see their offici
 
 Here's another example. This time we'll use the client to get both the STH and LTH NUPL for the market cycle from the 2016 halving to the 2020 halving, with a 24h resolution.
 ```python
-from  glassnode  import  GlassnodeClient
+from glassnode import GlassnodeClient
 
 api_key = ""
 
